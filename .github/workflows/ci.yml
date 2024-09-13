@@ -1,8 +1,10 @@
 name: Build and Test Go
 
 on:
+  push:
+    branches: [ workflow ]
   pull_request:
-    branches: [ "workflow" ]
+    branches: [ workflow ]
 
 jobs:
   build:
